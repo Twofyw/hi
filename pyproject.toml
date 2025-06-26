@@ -1,0 +1,69 @@
+[project]
+authors = [
+  {name = "William Fu-Hinthorn", email = "13333726+hinthornw@users.noreply.github.com"},
+]
+dependencies = [
+  "langgraph>=0.2.6",
+  "langchain-openai>=0.1.22",
+  "langchain-anthropic>=0.1.23",
+  "langchain>=0.2.14",
+  "langchain-fireworks>=0.1.7",
+  "python-dotenv>=1.0.1",
+  "libtmux>=0.46.2",
+  "asyncclick>=8.1.8",
+]
+description = "Starter template for making a custom Reasoning and Action agent (using tool calling) in LangGraph."
+license = {text = "MIT"}
+name = "hi"
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+version = "0.0.1"
+
+[project.scripts]
+hi = "hi.cli.main:main"
+
+[project.optional-dependencies]
+dev = ["mypy>=1.11.1", "ruff>=0.6.1"]
+langfuse = [
+  "langfuse>=3.0.5",
+]
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=73.0.0", "wheel"]
+
+[tool.setuptools]
+packages = ["hi"]
+[tool.setuptools.package-dir]
+"hi" = "src/hi"
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.ruff]
+lint.ignore = [
+  "UP006",
+  "UP007", # We actually do want to import from typing_extensions
+  "UP035", # Relax the convention by _not_ requiring documentation for every function parameter.
+  "D417",
+  "E501",
+]
+lint.select = [
+  "E", # pycodestyle
+  "F", # pyflakes
+  "I", # isort
+  "D", # pydocstyle
+  "D401", # First line should be in imperative mood
+  "T201",
+  "UP",
+]
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D", "UP"]
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[dependency-groups]
+dev = [
+  "langgraph-cli[inmem]>=0.1.71",
+  "pytest>=8.3.5",
+]
