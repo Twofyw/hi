@@ -1,6 +1,6 @@
 [project]
 authors = [
-  {name = "William Fu-Hinthorn", email = "13333726+hinthornw@users.noreply.github.com"},
+  {name = "Wenxiang Yang", email = "ywywywx@gmail.com"},
 ]
 dependencies = [
   "langgraph>=0.2.6",
@@ -12,7 +12,7 @@ dependencies = [
   "libtmux>=0.46.2",
   "asyncclick>=8.1.8",
 ]
-description = "Starter template for making a custom Reasoning and Action agent (using tool calling) in LangGraph."
+description = "A fast terminal-native AI assistant that sees what you see."
 license = {text = "MIT"}
 name = "hi"
 readme = "README.md"
