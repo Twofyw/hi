@@ -82,13 +82,11 @@ Example `~/.config/tmuxai/config.yaml`:
 # Default model: "smart" (capable) or "fast" (lightweight)
 default_model: "smart"
 
-
 # Configuration for the primary, more capable model.
 smart_model:
   # The model name in 'provider/model_name' format.
   # Supported providers include openai, anthropic, google, ollama, etc.
   # See LangChain documentation for init_chat_model for a full list.
-  smart_model:
   fully_specified_name: "openai/gpt-4o"
   # api_key: "sk-..." # Optional if set via OPENAI_API_KEY
   # base_url: "https://api.openai.com/v1" # Optional if set via OPENAI_API
