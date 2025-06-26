@@ -147,7 +147,7 @@ print(df)
 ```
 
 Now if we try to run the python script, it will complain that no module named 'pandas' is found, because we are (deliberately) not using an environment with pandas installed. Let's ask hi to help us again:
-![run_hi](docs/img/run_hi.png)
+![run_hi](docs/img/run_hi_thin.png)
 
 Note how we seamlessly provide context to hi using a tmux pane within the same window, eliminating the need to repeat the full problem for the LLM. hi sees exactly what you see.
 
