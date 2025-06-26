@@ -2,9 +2,9 @@
   <h1>hi</h1>
   <p><strong>A fast terminal-native AI assistant that sees what you see.</strong></p>
   <p>
-    <a href="https://github.com/twofyw/hi/releases/latest"><img alt="GitHub release" src="https://img.shields.io/github/v/release/twofyw/hi"></a>
+    <!-- <a href="https://github.com/twofyw/hi/releases/latest"><img alt="GitHub release" src="https://img.shields.io/github/v/release/twofyw/hi"></a> -->
     <a href="https://github.com/twofyw/hi/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/twofyw/hi"></a>
-    <a href="https://github.com/twofyw/hi/actions"><img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/twofyw/hi/release.yml"></a>
+    <!-- <a href="https://github.com/twofyw/hi/actions"><img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/twofyw/hi/release.yml"></a> -->
   </p>
 </div>
 
