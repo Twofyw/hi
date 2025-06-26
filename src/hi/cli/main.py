@@ -121,7 +121,7 @@ async def _run_interaction_loop(
         else:  # Only stop if no tool calls left
             prompt = click.prompt(
                 click.style(
-                    """*****\n\nSend another message, or press Enter to exit.\n""",
+                    """\n*****\nSend another message, or press Enter to exit.\n""",
                     "green",
                 )
                 + CMD_PROMPT,
