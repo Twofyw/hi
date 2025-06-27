@@ -52,7 +52,7 @@ class Configuration(BaseModel):
     )
 
     command_timeout: float = Field(
-        default=5,
+        default=30,
         description="The timeout in seconds for executing commands. "
         "This is used to limit how long the agent waits for command execution.",
     )
