@@ -9,7 +9,7 @@
 </div>
 
 
-<!-- TODO: Add a real demo GIF -->
+![run_hi](docs/img/run_hi_thin.png)
 
 `hi` isn't just another AI chat wrapper or fully autonomous coding agent - it's a context-aware terminal assistant that operates within your workflow. It sees what you see - your terminal window, eliminating context switching and copy-pasting.
 
