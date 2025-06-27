@@ -78,7 +78,7 @@ Requires Python 3.11+ and tmux.
 
 
 
-Example `~/.config/tmuxai/config.yaml`:
+Example `~/.config/hi/config.yaml`:
 ```yaml
 # Default model: "smart" (capable) or "fast" (lightweight)
 default_model: "smart"

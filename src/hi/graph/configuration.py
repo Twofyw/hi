@@ -10,8 +10,8 @@ from pydantic import BaseModel, Field
 
 from hi.graph import prompts
 
-DEFAULT_CONFIG_PATH = Path("~/.config/tmuxai/config.yaml").expanduser().resolve()
-DEFAULT_ENV_PATH = Path("~/.config/tmuxai/env").expanduser().resolve()
+DEFAULT_CONFIG_PATH = Path("~/.config/hi/config.yaml").expanduser().resolve()
+DEFAULT_ENV_PATH = Path("~/.config/hi/env").expanduser().resolve()
 
 
 class ModelConfig(BaseModel):
