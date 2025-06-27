@@ -32,10 +32,8 @@ langfuse = [
 build-backend = "setuptools.build_meta"
 requires = ["setuptools>=73.0.0", "wheel"]
 
-[tool.setuptools]
-packages = ["hi"]
-[tool.setuptools.package-dir]
-"hi" = "src/hi"
+[options.packages.find]
+where = ["src"]
 
 [tool.setuptools.package-data]
 "*" = ["py.typed"]

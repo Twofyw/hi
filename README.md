@@ -39,7 +39,7 @@
 
 ## 🤔 Why `hi`?
 
-While tools like Claude Coder, Gemini CLI, or Codex serve specific purposes, `hi` is purpose-built as a flexible terminal assistant:
+While tools like Claude Code, Gemini CLI, or Codex serve specific purposes, `hi` is purpose-built as a flexible terminal assistant:
 
 | Feature               | `hi`                                       | Alternatives (Claude/Gemini/Codex)      |
 |-----------------------|--------------------------------------------|------------------------------------------|
@@ -67,6 +67,7 @@ Note: The "Fix Python Module not found error" example is walked through in the U
 ```bash
 pip install git+https://github.com/twofyw/hi.git@main
 ```
+Requires Python 3.11+ and tmux.
 
 
 ## ⚙️ Configuration
