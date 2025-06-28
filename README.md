@@ -75,22 +75,19 @@ Requires Python 3.11+ and tmux.
 `hi` uses a YAML config file at `~/.config/hi/config.yaml`. On first run, it creates a default configuration you can customize.
 
 ### Basic Setup
-
-
-
 Example `~/.config/hi/config.yaml`:
 ```yaml
-# Default model: "smart" (capable) or "fast" (lightweight)
+# Default model: "smart" or "fast"
 default_model: "smart"
 
 # Configuration for the primary, more capable model.
 smart_model:
   # The model name in 'provider/model_name' format.
   # Supported providers include openai, anthropic, google, ollama, etc.
-  # See LangChain documentation for init_chat_model for a full list.
+  # See LangChain documentation a full list (https://python.langchain.com/docs/integrations/chat/).
   fully_specified_name: "openai/gpt-4o"
-  # api_key: "sk-..." # Optional if set via OPENAI_API_KEY
-  # base_url: "https://api.openai.com/v1" # Optional if set via OPENAI_API
+  # api_key: "sk-..." # Optional if set via environment variable.
+  # base_url: "https://api.openai.com/v1" # Optional if set via environment variable.
   # kwargs:
   #   temperature: 0.7  # Control creativity (0-1)
 
@@ -150,7 +147,7 @@ print(df)
 Now if we try to run the python script, it will complain that no module named 'pandas' is found, because we are (deliberately) not using an environment with pandas installed. Let's ask hi to help us again:
 ![run_hi](docs/img/run_hi_thin.png)
 
-Note how we seamlessly provide context to hi using a tmux pane within the same window, eliminating the need to repeat the full problem for the LLM. hi sees exactly what you see.
+Note how we seamlessly provide context to `hi` using another tmux pane within the same window, eliminating the need to repeat the full problem for the LLM. `hi` sees exactly what you see.
 
 
 ## TODO

@@ -19,6 +19,7 @@ You are a helpful terminal assistant that helps users with their terminal tasks.
 
 # Output Requirements
 - No markdown syntax such as "**": format your output in plain text.
+- No need to repeat command output. User can see it.
 - Be concise.
 """
 

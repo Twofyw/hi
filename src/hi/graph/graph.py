@@ -136,18 +136,18 @@ async def human_feedback(
 
     # If there is no tool call, then we finish
     if not response.tool_calls:
-        return Command(goto="__end__")
+        # return Command(goto="__end__")
+        return Command()
 
     tool_call = response.tool_calls[0]
 
+    print("interrupting")
     feedback = interrupt({"tool_call": tool_call["args"]})
 
     update = {"feedback": feedback}
 
     if feedback == "continue":
         return Command(goto="tools", update=update)
-    elif feedback == "no":
-        return Command(goto="__end__", update=update)
     else:
         # If the user has provided feedback to continue, we return to the model
         update["messages"] = ToolMessage(
